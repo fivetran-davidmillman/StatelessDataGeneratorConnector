@@ -1,0 +1,12 @@
+{
+  "customer_count": "100",
+  "web_interaction_min": "5",
+  "web_interaction_max": "30",
+  "abandoned_cart_item_min": "0",
+  "abandoned_cart_item_max": "4",
+  "orders_min": "0",
+  "orders_max": "5",
+  "incremental_min": "5",
+  "incremental_max": "25",
+  "seed": "42"
+}

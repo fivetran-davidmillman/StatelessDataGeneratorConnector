@@ -1,0 +1,1 @@
+{"history_complete": true, "history_cursor": 100, "reference_total": 100, "epoch": "2026-11-02T20:21:59.226Z", "next_ids": {"web_interaction": 305, "abandoned_cart_item": 326, "orders": 323}, "sync_count": 3, "last_tables_updated": ["abandoned_cart_item", "orders"]}

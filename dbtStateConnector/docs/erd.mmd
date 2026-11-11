@@ -1,0 +1,41 @@
+erDiagram
+    customer ||--o{ web_interaction : "has"
+    customer ||--o{ abandoned_cart_item : "has"
+    customer ||--o{ orders : "has"
+    customer {
+        LONG customer_id PK
+        STRING first_name
+        STRING last_name
+        STRING email
+        STRING country
+        STRING loyalty_tier
+        BOOLEAN marketing_opt_in
+        UTC_DATETIME signup_at
+    }
+    web_interaction {
+        LONG interaction_id PK
+        LONG customer_id FK
+        STRING event_type
+        STRING device
+        STRING page_path
+        INT session_seconds
+        UTC_DATETIME occurred_at
+    }
+    abandoned_cart_item {
+        LONG cart_item_id PK
+        LONG customer_id FK
+        STRING product_name
+        STRING product_category
+        INT quantity
+        DOUBLE cart_value
+        UTC_DATETIME abandoned_at
+    }
+    orders {
+        LONG order_id PK
+        LONG customer_id FK
+        STRING order_status
+        STRING channel
+        INT item_count
+        DOUBLE order_total
+        UTC_DATETIME ordered_at
+    }
